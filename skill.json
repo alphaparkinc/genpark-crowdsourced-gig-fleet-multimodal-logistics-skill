@@ -1,0 +1,41 @@
+{
+  "name": "genpark-crowdsourced-gig-fleet-multimodal-logistics-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Crowdsourced gig rider matching and multi-modal express logistics platform for hyperlocal on-demand and e-commerce reverse pickups.",
+  "author": "genpark",
+  "category": "logistics",
+  "tags": [
+    "gig-logistics",
+    "hyperlocal-delivery",
+    "multimodal-freight",
+    "reverse-pickup",
+    "shadowfax"
+  ],
+  "inputs": {
+    "pickup_lat": {
+      "type": "number"
+    },
+    "pickup_lon": {
+      "type": "number"
+    },
+    "package_weight_kg": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "task_assignment_id": {
+      "type": "string"
+    },
+    "transport_mode": {
+      "type": "string"
+    },
+    "rider_arrival_at_pickup_mins": {
+      "type": "number"
+    },
+    "sla_on_time_delivery_guarantee_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
